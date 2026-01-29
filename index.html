@@ -4,4 +4,20 @@
 </head>
 <body>
 
-<form onsumit ="username">
+
+<form onsubmit="return login()">
+   <input id="u" placeholder="Username" required">
+   <input id="p" type="password" placeholder="Password" required">
+   <button>login</button>
+</form>
+
+<script>
+function login() {
+  if(u.value=="admin" && p.value=="123"){
+     alert("Login berhasil")
+} else {
+     alert("login gagal");
+}
+</script>
+
+</body>
